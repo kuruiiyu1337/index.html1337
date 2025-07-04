@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Романтичный Сайт попытка № 13</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Dancing Script', cursive;
+      background: #fff0f5;
+      color: #b03060;
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      z-index: 1;
+      position: relative;
+    }
+
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background: #ff69b4;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 8px 15px rgba(255, 105, 180, 0.4);
+      z-index: 1;
+      position: relative;
+    }
+
+    .button:hover {
+      background: #ff85c1;
+      transform: scale(1.05);
+    }
+
+    /* Сердце-фон */
+    .heart-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 540px;
+      transform: translate(-50%, -50%) scale(1);
+      background-color: rgba(255, 105, 180, 0.1);
+      clip-path: path('M300 540 Q460 340 300 200 Q140 340 300 540 Z');
+      z-index: 0;
+    }
+
+    @supports (clip-path: path('M0,0')) {
+      .heart-bg {
+        clip-path: path('M300 540 Q460 340 300 200 Q140 340 300 540 Z');
+      }
+    }
+
+    @media (max-width: 600px) {
+      .heart-bg {
+        width: 300px;
+        height: 270px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-bg"></div>
+
+  <h1>I'm sorry моя пикми мелочь!</h1>
+  <p>Это небольшой романтичный сайт, созданный с любовью 💕</p>
+
+  <!-- Кнопка со ссылкой на Telegram -->
+  <a href="https://t.me/Yes22813" class="button" target="_blank">Напиши мне♥</a>
+
+</body>
+</html>
